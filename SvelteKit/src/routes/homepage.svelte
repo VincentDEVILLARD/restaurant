@@ -58,18 +58,6 @@
 	
 		</main>
 	
-	
-		<footer class="footer">
-		  <div class="container">        
-				<div class="nav">
-				  <a class="nav-link" href="PAS DE LIEN ENCORE">À propos</a>
-				  <a class="nav-link" href="PAS DE LIEN ENCORE">Livraisons</a>
-				  <a class="nav-link" href="PAS DE LIEN ENCORE">RGPD</a>
-				  <a class="nav-link" href="PAS DE LIEN ENCORE">Contact</a>
-				</div>
-		  </div>
-		</footer>
-	
 </div>
 
 <style>

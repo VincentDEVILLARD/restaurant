@@ -123,5 +123,6 @@
 
 	a:hover {
 		color: var(--accent-color);
+		opacity: 10%
 	}
 </style>

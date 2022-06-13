@@ -57,6 +57,18 @@ h4 {
 	color: var(--pure-white);
 }
 
+h3 {
+	font-size: 8rem;
+	font-family:'Times New Roman', Times, serif;
+	text-align: center;
+}
+
+h4 {
+	text-align: center;
+	font-size: 2rem;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 p {
 	line-height: 1.5;
 }
@@ -70,12 +82,12 @@ a:hover {
 	text-decoration: underline;
 }
 
-h1, h3 {
+h1 {
 	font-size: 2rem;
 	text-align: center;
 }
 
-h2, h4 {
+h2 {
 	font-size: 1rem;
 }
 

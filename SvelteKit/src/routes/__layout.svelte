@@ -9,8 +9,13 @@
 	<slot />
 </main>
 
-<footer>
-	<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
+<footer>      
+		<div class="nav">
+		  <a class="nav-link" href="PAS DE LIEN ENCORE">À propos</a>
+		  <a class="nav-link" href="PAS DE LIEN ENCORE">Livraisons</a>
+		  <a class="nav-link" href="PAS DE LIEN ENCORE">RGPD</a>
+		  <a class="nav-link" href="PAS DE LIEN ENCORE">Contact</a>
+		</div>
 </footer>
 
 <style>
@@ -18,9 +23,7 @@
 		flex: 1;
 		display: flex;
 		flex-direction: column;
-		padding: 1rem;
 		width: 100%;
-		max-width: 1024px;
 		margin: 0 auto;
 		box-sizing: border-box;
 	}
