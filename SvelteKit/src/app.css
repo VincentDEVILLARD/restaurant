@@ -8,8 +8,8 @@
 	--primary-color: #b9c6d2;
 	--secondary-color: #d0dde9;
 	--tertiary-color: #edf0f8;
-	--accent-color: #ff3e00;
-	--heading-color: rgba(0, 0, 0, 0.7);
+	--accent-color: #ffa600;
+	--heading-color: rgba(0, 0, 0, 0.774);
 	--text-color: #444444;
 	--background-without-opacity: rgba(255, 255, 255, 0.7);
 	--column-width: 42rem;
@@ -19,13 +19,7 @@
 body {
 	min-height: 100vh;
 	margin: 0;
-	background-color: var(--primary-color);
-	background: linear-gradient(
-		180deg,
-		var(--primary-color) 0%,
-		var(--secondary-color) 10.45%,
-		var(--tertiary-color) 41.35%
-	);
+	background-color: white;
 }
 
 body::before {
@@ -57,6 +51,12 @@ p {
 	color: var(--heading-color);
 }
 
+h3,
+h4 {
+	font-weight: 400;
+	color: var(--pure-white);
+}
+
 p {
 	line-height: 1.5;
 }
@@ -70,12 +70,12 @@ a:hover {
 	text-decoration: underline;
 }
 
-h1 {
+h1, h3 {
 	font-size: 2rem;
 	text-align: center;
 }
 
-h2 {
+h2, h4 {
 	font-size: 1rem;
 }
 
@@ -104,4 +104,81 @@ button:focus:not(:focus-visible) {
 	h1 {
 		font-size: 2.4rem;
 	}
+}
+
+.container {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto; 
+}
+
+
+.slideshow {
+    display: flex;
+    width: 100%;
+    padding: 4% 2%;
+    box-sizing: border-box;
+    height: 100vh;
+}
+  
+.box {
+    flex: 1;
+    overflow: hidden;
+    transition: .5s;
+    margin: 0 2%;
+    line-height: 0;
+}
+  
+.box > img {
+    width: 200%;
+    height: calc(100% - 10vh);
+    object-fit: cover; 
+    transition: .5s;
+}
+  
+.box > span {
+    font-size: 3.8vh;
+    display: block;
+    text-align: center;
+    height: 10vh;
+    line-height: 2.6;
+}
+  
+.box:hover { flex: 1 1 50%; }
+  .box:hover > img {
+    width: 100%;
+    height: 100%;
+}
+
+.menu-category {
+	display: block;
+	color: var(--color_primary);
+	margin: 40px 0;
+}
+.menu-category h2 {
+	font-family: 'Playfair Display', serif;
+	font-size: 2rem;
+	line-height: 1.375;
+	letter-spacing: 2px;
+	color: #111;
+	margin: 0;
+	text-align: center;
+}
+.menu-category p {
+	font-family: 'Playfair Display', serif;
+	font-size: 1rem;
+	letter-spacing: 2px;
+	color: #111;
+	margin: 0;
+	text-align: center;
+}
+.menu-header {
+	margin: 10px;
+}
+.menu-header_title {
+	font-family: 'Playfair Display', serif;
+	margin: 10px;
+	text-align: center;
 }
