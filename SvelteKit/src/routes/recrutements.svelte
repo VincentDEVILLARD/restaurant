@@ -8,9 +8,7 @@
     import * as yup from "yup";
     import { createForm } from "svelte-forms-lib";
 
-    import { TextInput, TextArea, Button, FormGroup, Form, InlineNotification } from "carbon-components-svelte";
-
-    let apiResult = null;
+    import { TextInput, TextArea, Button, FormGroup, Form, Checkbox, InlineNotification, DatePicker, DatePickerInput } from "carbon-components-svelte";
 
 	const validationSchema = yup.object().shape({
       name: yup.string().required('Please enter a name'),
@@ -18,8 +16,10 @@
       message: yup.string().required('Please enter a message')
 	});
 
+    let apiResult = null;
+
     const { form, errors, handleChange, handleSubmit, isSubmitting, handleReset } = createForm({
-        initialValues: { Prénom: "", Téléphone: "", Email: "" },
+        initialValues: { name: "", email: "", message: "" },
         validationSchema: validationSchema,
         onSubmit: async values => {
 
@@ -44,53 +44,85 @@
 </script>
 
 <main>
-	<div class="page">
+			<div class="page">
 
-		<h2>Contact Us</h2>
-		<p>Enter the details to get in touch with us. You can remove your email at any time after this.</p> <br/><br/>
-	
-		{#if apiResult != null}
-	
-			{#if apiResult == true}
-			<InlineNotification
-				lowContrast
-				kind="success"
-				title="Success:"
-				subtitle="Your message has been received"
-			/>
-			{:else}
-			<InlineNotification lowContrast kind="error"
-				title="Error:"
-				subtitle="An internal server error occurred."
-			/>
-	
-			{/if}    
-		{/if}
+				<h2>Do you want to join us?</h2>
+				<p>Enter your information on this form and we will contact you soon !</p> <br/><br/>
+			
+				{#if apiResult != null}
+			
+					{#if apiResult == true}
+					<InlineNotification
+						lowContrast
+						kind="success"
+						title="Success:"
+						subtitle="Your message has been received"
+					/>
+					{:else}
+					<InlineNotification lowContrast kind="error"
+						title="Error:"
+						subtitle="An internal server error occurred."
+					/>
+			
+					{/if}    
+				{/if}
 
-		<Form on:submit={handleSubmit}>
-	
-			<FormGroup>
-				<TextInput labelText="Name" name="name" 
-					on:change={handleChange} bind:value={$form.name}
-					invalid={$errors.name.length > 0} invalidText={$errors.name}/>
-			</FormGroup>
-	
-			<FormGroup>
-				<TextInput labelText="Email" name="email" type="email" 
-				on:change={handleChange} bind:value={$form.email}
-				invalid={$errors.email.length > 0} invalidText={$errors.email}/>
-			</FormGroup>
-	
-	
-			<FormGroup>
-				<TextArea labelText="Message" name="message" type="textarea"
-				on:change={handleChange} bind:value={$form.message}
-				invalid={$errors.message.length > 0} invalidText={$errors.message}/>
-			</FormGroup>
-	
-			<Button type="submit" disabled={$isSubmitting}>Submit</Button>
-		</Form>
-	</div>
+				<Form on:submit={handleSubmit}>
+
+					<FormGroup>
+						<TextInput labelText="Name" name="name" 
+							on:change={handleChange} bind:value={$form.name}
+							invalid={$errors.name.length > 0} invalidText={$errors.name}/>
+					</FormGroup>
+
+					<FormGroup>
+						<TextInput labelText="First Name" name="prenom" 
+							on:change={handleChange} bind:value={$form.prenom}
+							invalid={$errors.name.length > 0} invalidText={$errors.name}/>
+					</FormGroup>
+
+					<FormGroup>
+						<TextInput labelText="Phone Number" name="Telephone" 
+							on:change={handleChange} bind:value={$form.telephone}
+							invalid={$errors.name.length > 0} invalidText={$errors.name}/>
+					</FormGroup>
+
+					<FormGroup>
+						<TextInput labelText="Email" name="email" type="email" 
+							on:change={handleChange} bind:value={$form.email}
+							invalid={$errors.email.length > 0} invalidText={$errors.email}/>
+					</FormGroup>
+
+					<FormGroup>
+						<DatePicker datePickerType="single" on:change={handleChange} bind:value={$form.disponibilite}>
+							<DatePickerInput labelText="Starting Date" placeholder="dd/mm/yyyy" />
+						</DatePicker>
+					</FormGroup>
+
+					<p>When are you available?</p> <br/><br/>
+
+					<FormGroup>
+						<Checkbox id="semaine" labelText="Weekdays (Mondays to Fridays)" 
+							on:change={handleChange} bind:value={$form.semaine}/>
+					</FormGroup>
+
+					<FormGroup>
+						<Checkbox id="weekend" labelText="Weekends (Saturdays & Sundays)" 
+							on:change={handleChange} bind:value={$form.weekend}/>
+					</FormGroup>
+			
+					<FormGroup>
+						<TextArea labelText="Motivation letter" name="message" type="textarea"
+							on:change={handleChange} bind:value={$form.message}
+							invalid={$errors.message.length > 0} invalidText={$errors.message}/>
+					</FormGroup>
+
+			
+					<div id="submit">
+					<Button type="submit" disabled={$isSubmitting}>Submit</Button>
+					</div>
+				</Form>
+			</div>
 </main>
 
 
@@ -102,12 +134,19 @@
 		width: 100%;
 		margin: 0 auto;
 		box-sizing: border-box;
+		background-color:rgb(255, 255, 255);
 	}
 
-	@media (min-width: 480px) {
+	@media (max-width: 1000px) {
+
 	}
 
 	.page {
         margin: 40px;
     }
+
+	#submit {
+		text-align: center;
+		width: 100%;
+	}
 </style>
