@@ -3,7 +3,21 @@
 </script>
 
 <script>
+// @ts-nocheck
+
 	import Counter from '$lib/Counter.svelte';
+	import { supabase } from "/src/supabaseClient.ts";
+
+
+async function getData() {
+	const { data, error } = await supabase
+		.from('Recrutements')
+		.select()  
+		
+	if (error) throw new Error(error.message)
+	
+	return data
+}
 </script>
 
 <svelte:head>

@@ -1,12 +1,11 @@
 <script>
 // @ts-nocheck
-
-
 	import '../app.css';
 	import "carbon-components-svelte/css/g10.css";
 	import { supabase } from "/src/supabaseClient.ts";
     import * as yup from "yup";
     import { createForm } from "svelte-forms-lib";
+	import { page } from '$app/stores';
 
     import { TextInput, TextArea, Button, FormGroup, Form, Checkbox, InlineNotification, DatePicker, DatePickerInput } from "carbon-components-svelte";
 
@@ -39,7 +38,6 @@
             handleReset();
       }
     });
-
 
 </script>
 
@@ -123,8 +121,13 @@
 					</div>
 				</Form>
 			</div>
-</main>
 
+			<br>
+
+			<p id=admin class:active={$page.url.pathname === '/database'}>
+				<a sveltekit:prefetch href="/database">Database</a>
+			</p>
+</main>
 
 <style>
 	main {
@@ -148,5 +151,10 @@
 	#submit {
 		text-align: center;
 		width: 100%;
+	}
+
+	#admin {
+		text-align: center;
+		background-color:rgb(230, 230, 230);
 	}
 </style>
