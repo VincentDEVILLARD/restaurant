@@ -1,0 +1,257 @@
+@import '@fontsource/fira-mono';
+
+:root {
+	font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	--font-mono: 'Fira Mono', monospace;
+	--pure-white: #ffffff;
+	--primary-color: #b9c6d2;
+	--secondary-color: #d0dde9;
+	--tertiary-color: #edf0f8;
+	--accent-color: #ffa600;
+	--heading-color: rgba(0, 0, 0, 0.774);
+	--text-color: #444444;
+	--background-without-opacity: rgba(255, 255, 255, 0.7);
+	--column-width: 42rem;
+	--column-margin-top: 4rem;
+}
+
+body {
+	min-height: 100vh;
+	margin: 0;
+	background-color: white;
+}
+
+body::before {
+	content: '';
+	width: 80vw;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 10vw;
+	z-index: -1;
+	background: radial-gradient(
+		50% 50% at 50% 50%,
+		var(--pure-white) 0%,
+		rgba(255, 255, 255, 0) 100%
+	);
+	opacity: 0.05;
+}
+
+#svelte {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+h1,
+h2 {
+	font-weight: 400;
+	font-size: 2rem;
+	font-family: 'Playfair Display', serif;
+	color: var(--heading-color);
+}
+
+h3,
+h4 {
+	font-weight: 400;
+	color: #444444;
+}
+
+h3 {
+	font-size: 1.2rem;
+	font-family: 'Playfair Display', serif;
+	text-align: center;
+}
+
+h4 {
+	text-align: center;
+	font-size: 1rem;
+	font-family:'Times New Roman', Times, serif;
+	font-style: italic;
+}
+
+p {
+	line-height: 1.5;
+	font-size: 1rem;
+}
+
+a {
+	color: var(--accent-color);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+h1 {
+	font-size: 2rem;
+	text-align: center;
+}
+
+h2 {
+	font-size: 1rem;
+}
+
+pre {
+	font-size: 16px;
+	font-family: var(--font-mono);
+	background-color: rgba(255, 255, 255, 0.45);
+	border-radius: 3px;
+	box-shadow: 2px 2px 6px rgb(255 255 255 / 25%);
+	padding: 0.5em;
+	overflow-x: auto;
+	color: var(--text-color);
+}
+
+input,
+button {
+	font-size: inherit;
+	font-family: inherit;
+}
+
+button:focus:not(:focus-visible) {
+	outline: none;
+}
+
+@media (min-width: 720px) {
+	h1 {
+		font-size: 2.4rem;
+	}
+}
+
+.container {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto; 
+}
+
+
+.slideshow {
+    display: flex;
+    width: 100%;
+    padding: 4% 2%;
+    box-sizing: border-box;
+    height: 100vh;
+}
+  
+.box {
+    flex: 1;
+    overflow: hidden;
+    transition: .5s;
+    margin: 0 2%;
+    line-height: 0;
+}
+  
+.box > img {
+    width: 200%;
+    height: calc(100% - 10vh);
+    object-fit: cover; 
+    transition: .5s;
+}
+  
+.box > span {
+    font-size: 3.8vh;
+    display: block;
+    text-align: center;
+    height: 10vh;
+    line-height: 2.6;
+}
+  
+.box:hover { flex: 1 1 50%; }
+  .box:hover > img {
+    width: 100%;
+    height: 100%;
+}
+
+.menu-header {
+	margin: 10px;
+	padding: 20px;
+	background-image: url("file:///Users/margotclavel/Downloads/davey-gravy-krsKfCC1lYw-unsplash.jpg");
+}
+.menu-header_title {
+	font-family: 'Playfair Display', serif;
+	margin: 10px;
+    text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.menu-category {
+	color: var(--color_primary);
+	margin: 40px 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+.menu-category h2 {
+	font-family: 'Playfair Display', serif;
+	font-size: 1.5rem;
+	line-height: 1.375;
+	letter-spacing: 2px;
+	color: #111;
+	margin: 0;
+	text-align: center;
+}
+.menu-category_brunch {
+    text-align: left;
+    margin-left: 20px;
+}
+.menu-category_tapas {
+    text-align: center;
+}
+.menu-category_boissons {
+    text-align: right;
+    margin-right: 20px;
+}
+.menu-category p {
+	font-family: 'Playfair Display', serif;
+	letter-spacing: 2px;
+	color: #111;
+	margin: 0;
+	text-align: center;
+}
+.menu-list {
+	/* Ajouter scroll navigation pour pas de défilement */
+	font-weight: bold;
+}
+.menu-list_title {
+	font-family: 'Playfair Display', serif;
+	font-size: 1.5rem;
+	line-height: 1.375;
+	letter-spacing: 2px;
+	color: #111;
+	margin: 0;
+	letter-spacing: 2px;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.menu-list_subcategory {
+   	text-align: center;
+	color: grey;
+}
+.menu-list_subcategory2 {
+   	text-align: center;
+}
+.menu-list p {
+	font-family: 'Playfair Display', serif;
+	font-weight: normal;
+	line-height: 0;
+	text-align: left;
+}
+
+.menu-list p {
+	text-align: justify;
+}
+.menu-list p span.gauche {
+	float: left;
+}
+.menu-list p span.droite {
+	float: right;
+}
+	
+
+
