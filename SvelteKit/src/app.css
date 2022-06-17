@@ -45,32 +45,35 @@ body::before {
 }
 
 h1,
-h2,
-p {
+h2 {
 	font-weight: 400;
+	font-size: 2rem;
+	font-family: 'Playfair Display', serif;
 	color: var(--heading-color);
 }
 
 h3,
 h4 {
 	font-weight: 400;
-	color: var(--pure-white);
+	color: #444444;
 }
 
 h3 {
-	font-size: 8rem;
-	font-family:'Times New Roman', Times, serif;
+	font-size: 1.2rem;
+	font-family: 'Playfair Display', serif;
 	text-align: center;
 }
 
 h4 {
 	text-align: center;
-	font-size: 2rem;
-	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 1rem;
+	font-family:'Times New Roman', Times, serif;
+	font-style: italic;
 }
 
 p {
 	line-height: 1.5;
+	font-size: 1rem;
 }
 
 a {
@@ -164,33 +167,91 @@ button:focus:not(:focus-visible) {
     height: 100%;
 }
 
+.menu-header {
+	margin: 10px;
+	padding: 20px;
+	background-image: url("file:///Users/margotclavel/Downloads/davey-gravy-krsKfCC1lYw-unsplash.jpg");
+}
+.menu-header_title {
+	font-family: 'Playfair Display', serif;
+	margin: 10px;
+    text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
 .menu-category {
-	display: block;
 	color: var(--color_primary);
 	margin: 40px 0;
+	text-align: center;
+	text-transform: uppercase;
 }
 .menu-category h2 {
 	font-family: 'Playfair Display', serif;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	line-height: 1.375;
 	letter-spacing: 2px;
 	color: #111;
 	margin: 0;
 	text-align: center;
 }
+.menu-category_brunch {
+    text-align: left;
+    margin-left: 20px;
+}
+.menu-category_tapas {
+    text-align: center;
+}
+.menu-category_boissons {
+    text-align: right;
+    margin-right: 20px;
+}
 .menu-category p {
 	font-family: 'Playfair Display', serif;
-	font-size: 1rem;
 	letter-spacing: 2px;
 	color: #111;
 	margin: 0;
 	text-align: center;
 }
-.menu-header {
-	margin: 10px;
+.menu-list {
+	/* Ajouter scroll navigation pour pas de défilement */
+	font-weight: bold;
 }
-.menu-header_title {
+.menu-list_title {
 	font-family: 'Playfair Display', serif;
-	margin: 10px;
+	font-size: 1.5rem;
+	line-height: 1.375;
+	letter-spacing: 2px;
+	color: #111;
+	margin: 0;
+	letter-spacing: 2px;
 	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
 }
+.menu-list_subcategory {
+   	text-align: center;
+	color: grey;
+}
+.menu-list_subcategory2 {
+   	text-align: center;
+}
+.menu-list p {
+	font-family: 'Playfair Display', serif;
+	font-weight: normal;
+	line-height: 0;
+	text-align: left;
+}
+
+.menu-list p {
+	text-align: justify;
+}
+.menu-list p span.gauche {
+	float: left;
+}
+.menu-list p span.droite {
+	float: right;
+}
+	
+
+
