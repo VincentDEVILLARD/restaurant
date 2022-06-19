@@ -6,9 +6,9 @@
             <br>
             <h3>Phone Numbers</h3>
             <p>
-                <img src="https://cdn.icon-icons.com/icons2/37/PNG/512/restaurant_4373.png" style="width:20px ; margin-right:5px">
+                <img src="https://cdn.icon-icons.com/icons2/37/PNG/512/restaurant_4373.png" style="width:20px ; margin-right:5px" alt="">
                 01.02.03.04.05<br>
-                <img src="https://cdn.icon-icons.com/icons2/614/PNG/512/phone-call-auricular-symbol-in-black_icon-icons.com_56483.png" style="width:15px ; margin-right:10px">
+                <img src="https://cdn.icon-icons.com/icons2/614/PNG/512/phone-call-auricular-symbol-in-black_icon-icons.com_56483.png" style="width:15px ; margin-right:10px" alt="">
                 06.07.08.09.10
             </p> 
             <br>

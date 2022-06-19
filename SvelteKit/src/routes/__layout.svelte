@@ -12,7 +12,7 @@
 <footer>      
 	<div class="row">
 		<div class="column" id="left">
-			<a href="./privacy"><p>Contact Us</p></a>
+			<a href="./contactUs"><p>Contact Us</p></a>
 		</div>
 		<div class="column" id="right">
 			<a href="./privacy"><p>RGPD</p></a>
