@@ -21,7 +21,7 @@
 
 <div class=Video>
 	<video autoplay muted loop class="Video">
-		<source src="https://img.belmond.com/video/upload/w_1920,ar_16:9,c_fill,g_auto/f_auto,q_auto/v1650376888/videos/VSO/vso-homepage-loop-launch.mp4" type="video/mp4">
+		<source src="/videohomepage.mp4" type="video/mp4">
 	</video>
 	<div class="caption">
 		<h3>Un super super nom de restaurant</h3>
@@ -81,5 +81,19 @@
 		text-align: left;
 		color: #ffffff;
 		padding: 10px;
+	}
+
+	h3 {
+		color:#ffffff;
+		font-size: 10vh;
+		font-family: 'Times New Roman', Times, serif;
+		text-shadow: 2px 2px black;
+	}
+
+	h4 {
+		color:#ffffff;
+		font-size: 3vh;
+		font-family: 'Times New Roman', Times, serif;
+		text-shadow: 1px 1px black;
 	}
 </style>

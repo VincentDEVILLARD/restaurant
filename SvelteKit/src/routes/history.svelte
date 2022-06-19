@@ -65,9 +65,10 @@
 
 		</ParallaxLayer>
 
-		<ParallaxLayer rate={-0.25} offset={0}>	
-			 <!--C'est pas la version finale, l'idée c'est d'avoir plusieurs petits aliments qui se baladent-->
-			<img src="/img/backgroundbrunch.png" alt="" width=100%>
+		<ParallaxLayer rate={0.25} offset={0}>	
+			<div class=bg>
+				<img src="/img/backgroundbrunch.png" alt="">
+			</div>
 		</ParallaxLayer>
 
 		<ParallaxLayer rate={0} offset={0}>	
@@ -85,8 +86,6 @@
 			</div> 
 			<div class="description3">
 				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vulputate gravida lobortis. Ut sapien lacus, vestibulum quis lacinia ut, imperdiet ac est. Sed ex elit, lobortis nec nunc eget, fermentum interdum lacus. Donec faucibus volutpat quam, ornare elementum dui imperdiet sit amet. Mauris sed convallis magna. Vestibulum ut elit id ex suscipit auctor et vel neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam posuere volutpat lectus, id tincidunt tellus facilisis non. Sed risus nibh, imperdiet ut mi sit amet, dignissim tristique dolor. Aenean sodales ante nec odio ullamcorper, fringilla semper nunc commodo.
-
-					Mauris ut efficitur nibh. Morbi vestibulum varius metus, vel sagittis orci aliquet vitae. Vivamus ipsum dui, cursus non magna ut, tempor euismod tortor. Vestibulum elementum non neque vitae mattis. Etiam sed maximus metus, et efficitur quam. Nunc mauris felis, gravida ut tortor non, luctus sollicitudin libero. Sed mollis efficitur nibh non iaculis. Aenean efficitur malesuada dui, a pretium diam gravida sed. Cras ultrices finibus velit, sit amet consequat nulla commodo eu. Maecenas vestibulum ultrices leo eu rutrum. Phasellus sed massa sit amet lorem malesuada congue. Sed eget placerat neque, ut varius ante. 
 				</p>
 			</div> 
 		</ParallaxLayer>
@@ -95,7 +94,6 @@
 </div>
 
 <style>
-
 	.description1 {
 		position: absolute;
 		top: 20%;
@@ -109,7 +107,7 @@
 
 	.description2 {
 		position: absolute;
-		top: 80%;
+		top: 95%;
 		right: 5%;
 		left: 40%;
 		background-color: rgba(0, 0, 0, 0.661);
@@ -118,10 +116,9 @@
 		padding-right: 20px;
 	}
 
-
 	.description3 {
 		position: absolute;
-		top: 140%;
+		top: 160%;
 		left: 15%;
 		right: 30%;
 		background-color: rgba(0, 0, 0, 0.661);
@@ -132,6 +129,10 @@
 
 	p {
 		color: white;
+		font-size: 2vmin;
 	}
 
+	.bg {
+		object-fit: fill;
+	}
 </style>
