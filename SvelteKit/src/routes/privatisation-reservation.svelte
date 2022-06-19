@@ -52,12 +52,12 @@ import '../app.css';
 						lowContrast
 						kind="success"
 						title="Success:"
-						subtitle="Your message has been received"
+						subtitle="Your reservation has been received."
 					/>
 					{:else}
 					<InlineNotification lowContrast kind="error"
 						title="Error:"
-						subtitle="An internal server error occurred."
+						subtitle="Oops. Server error. No food for you."
 					/>
 			
 					{/if}    
@@ -67,9 +67,8 @@ import '../app.css';
 
                     <FormGroup>
                         <NumberInput on:change={handleChange} bind:value={$form.number}
-                            min={4}
-                            max={25}
-                            invalidText="Number of guest for a reservation must be at least 4."
+                            max={50}
+                            invalidText="Number of guest for a reservation must be at least 4 and maximum 50."
                             helperText="Our restaurant can accomodate a maximum of 50 guests."
                             label="How many guests?"
                             />
@@ -110,7 +109,7 @@ import '../app.css';
 			<br>
 
 			<p id=admin class:active={$page.url.pathname === '/database'}>
-				<a sveltekit:prefetch href="/database">Database</a>
+				<a sveltekit:prefetch href="/database" id=admin>Database</a>
 			</p>
 </main>
 
@@ -133,7 +132,7 @@ import '../app.css';
 
 	.page {
         margin: 40px;
-        aspect-ratio: 20/3;
+        font-family: 'Times New Roman', Times, serif;
     }
 
 	#submit {
@@ -143,7 +142,8 @@ import '../app.css';
 
 	#admin {
 		text-align: center;
-		background-color:rgb(230, 230, 230);
+		background-color:rgb(255, 255, 255);
+		color:rgb(255, 255, 255)
 	}
 
     .column {

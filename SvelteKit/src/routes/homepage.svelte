@@ -41,12 +41,10 @@
 				  <span>The Restaurant</span>>
 				</div>
 				<div class="box">
-				  <!-- svelte-ignore a11y-missing-attribute -->
 				  <a href='./ourTeam'><img src="/img/kousbi2.png" alt=""></a>
 				  <span>The Team</span>
 				</div>
 				<div class="box">
-				  <!-- svelte-ignore a11y-missing-attribute -->
 				  <a href='./menu'><img src="/img/kousbi3.png" alt=""></a>
 				  <span>The Food</span>
 				</div>
@@ -80,12 +78,11 @@
 		text-align: left;
 		color: #ffffff;
 		padding: 10px;
-		top:5%
 	}
 
 	h3 {
 		color:#ffffff;
-		font-size: 10vh;
+		font-size: 15vh;
 		font-family: 'Times New Roman', Times, serif;
 		text-shadow: 2px 2px black;
 	}
@@ -121,6 +118,7 @@
     transition: .5s;
     margin: 0 2%;
     line-height: 0;
+	font-family: 'Times New Roman', Times, serif;
 }
   
 .box > a > img {

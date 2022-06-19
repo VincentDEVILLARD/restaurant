@@ -79,19 +79,19 @@
 			</div> 
 
 			<div class="description1">
-				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vulputate gravida lobortis. Ut sapien lacus, vestibulum quis lacinia ut, imperdiet ac est. Sed ex elit, lobortis nec nunc eget, fermentum interdum lacus. Donec faucibus volutpat quam, ornare elementum dui imperdiet sit amet. Mauris sed convallis magna. Vestibulum ut elit id ex suscipit auctor et vel neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam posuere volutpat lectus, id tincidunt tellus facilisis non. Sed risus nibh, imperdiet ut mi sit amet, dignissim tristique dolor. Aenean sodales ante nec odio ullamcorper, fringilla semper nunc commodo.
+				<p> The restaurant culture is unique, unique and unique. There are countless good and bad examples of these same traits, most famously Italian fusion cuisine. All major European restaurants are inspired by them. Our vision is to have a strong base of loyal customers who share our values. We've created a team whose vision is based on the principles of open, friendly service and an open mind.
 
-					Mauris ut efficitur nibh. Morbi vestibulum varius metus, vel sagittis orci aliquet vitae. Vivamus ipsum dui, cursus non magna ut, tempor euismod tortor. Vestibulum elementum non neque vitae mattis. Etiam sed maximus metus, et efficitur quam. Nunc mauris felis, gravida ut tortor non, luctus sollicitudin libero. Sed mollis efficitur nibh non iaculis. Aenean efficitur malesuada dui, a pretium diam gravida sed. Cras ultrices finibus velit, sit amet consequat nulla commodo eu. Maecenas vestibulum ultrices leo eu rutrum. Phasellus sed massa sit amet lorem malesuada congue. Sed eget placerat neque, ut varius ante. 
+					If you want to come to a restaurant for just one person who is passionate about food, and your goal is to share that passion with your guests, you're best off bringing your own food into their food court. This takes teamwork, commitment and a willingness to work together. This is an absolutely special experience for us to be able to be the host, not the person who just wants to get in on the action.					
 				</p>
 			</div> 
 			<div class="description2">
-				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vulputate gravida lobortis. Ut sapien lacus, vestibulum quis lacinia ut, imperdiet ac est. Sed ex elit, lobortis nec nunc eget, fermentum interdum lacus. Donec faucibus volutpat quam, ornare elementum dui imperdiet sit amet. Mauris sed convallis magna. Vestibulum ut elit id ex suscipit auctor et vel neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam posuere volutpat lectus, id tincidunt tellus facilisis non. Sed risus nibh, imperdiet ut mi sit amet, dignissim tristique dolor. Aenean sodales ante nec odio ullamcorper, fringilla semper nunc commodo.
+				<p> We created our restaurant here in 1988 in an old home that is still owned by the owners and still serves up fantastic food to everyone. We've had many of our customers come back for a year (most come back for a year to visit) and we have always come back with a vengeance. Many years of building and renovating have made this restaurant something completely new. There are plenty of changes to make but, again, we've always got a smile on our face every time we open. The restaurant is still beautiful still to the best of our ability now we can truly call it what it is all about!
 
-					Mauris ut efficitur nibh. Morbi vestibulum varius metus, vel sagittis orci aliquet vitae. Vivamus ipsum dui, cursus non magna ut, tempor euismod tortor. Vestibulum elementum non neque vitae mattis. Etiam sed maximus metus, et efficitur quam. Nunc mauris felis, gravida ut tortor non, luctus sollicitudin libero. Sed mollis efficitur nibh non iaculis. Aenean efficitur malesuada dui, a pretium diam gravida sed. Cras ultrices finibus velit, sit amet consequat nulla commodo eu. Maecenas vestibulum ultrices leo eu rutrum. Phasellus sed massa sit amet lorem malesuada congue. Sed eget placerat neque, ut varius ante. 
+					If you are interested in eating in the restaurant please consider ordering the Chef's menu. If you're curious to know who owns the restaurant feel free to head upstairs to see for yourself and your friends!
 				</p>
 			</div> 
 			<div class="description3">
-				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vulputate gravida lobortis. Ut sapien lacus, vestibulum quis lacinia ut, imperdiet ac est. Sed ex elit, lobortis nec nunc eget, fermentum interdum lacus. Donec faucibus volutpat quam, ornare elementum dui imperdiet sit amet. Mauris sed convallis magna. Vestibulum ut elit id ex suscipit auctor et vel neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam posuere volutpat lectus, id tincidunt tellus facilisis non. Sed risus nibh, imperdiet ut mi sit amet, dignissim tristique dolor. Aenean sodales ante nec odio ullamcorper, fringilla semper nunc commodo.
+				<p> Here at Refresh Brunch restaurant, we have taken care to give you the greatest variety of foods you can eat, in every menu. In our speciality, our specialty is, which is always full of amazing flavors, freshness, and delicious freshness. We try to give you a different kind of dining experience to you than what traditional dining offers every day.
 				</p>
 			</div> 
 		</ParallaxLayer>
@@ -100,6 +100,11 @@
 </div>
 
 <style>
+
+	.main {
+		font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	}
+
 	.titre {
 		position: absolute;
 		top: 7%;
@@ -146,7 +151,7 @@
 
 	p {
 		color: white;
-		font-size: 2vmin;
+		font-size: 2.5vmin;
 	}
 
 	p.ti {

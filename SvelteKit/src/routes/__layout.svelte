@@ -12,23 +12,41 @@
 <footer>      
 	<div class="row">
 		<div class="column" id="left">
-			<p>Contact Us</p>
+			<a href="./privacy"><p>Contact Us</p></a>
 		</div>
 		<div class="column" id="right">
-			<p>RGPD</p>
+			<a href="./privacy"><p>RGPD</p></a>
 		</div>
 	  </div> 
+
+	<section class="copyrights">
+		<div> © 2022 Refresh Brunch SARL</div>
+	</section>
 </footer>
 
 <style>
 
-	#left > p {
-		justify-content:left
+	.copyrights {
+		font-size: x-small;
+		text-align: center;
+		margin: 5px
+	}
+
+	footer {
+		font-family:'Times New Roman', Times, serif;
 	}
 
 	.column {
 		float: left;
 		width: 50%;
+	}
+
+	.column > a > p {
+		margin: 10px
+	}
+
+	#right {
+		text-align: right;
 	}
 
 	.row:after {
@@ -46,21 +64,4 @@
 		box-sizing: border-box;
 	}
 
-	footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 40px;
-	}
-
-	footer a {
-		font-weight: bold;
-	}
-
-	@media (min-width: 480px) {
-		footer {
-			padding: 40px 0;
-		}
-	}
 </style>

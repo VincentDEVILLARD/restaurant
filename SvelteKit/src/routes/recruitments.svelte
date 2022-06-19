@@ -54,12 +54,12 @@
 						lowContrast
 						kind="success"
 						title="Success:"
-						subtitle="Your message has been received"
+						subtitle="Your candidacy has been received."
 					/>
 					{:else}
 					<InlineNotification lowContrast kind="error"
 						title="Error:"
-						subtitle="An internal server error occurred."
+						subtitle="A server error occurred. No job for you."
 					/>
 			
 					{/if}    
@@ -125,8 +125,12 @@
 			<br>
 
 			<p id=admin class:active={$page.url.pathname === '/database'}>
-				<a sveltekit:prefetch href="/database">Database</a>
+				<a sveltekit:prefetch href="/database" id=admin>Database</a>
 			</p>
+
+
+			<br>
+
 </main>
 
 <style>
@@ -146,15 +150,17 @@
 
 	.page {
         margin: 40px;
+		font-family: 'Times New Roman', Times, serif;
     }
 
 	#submit {
-		text-align: center;
-		width: 100%;
+		text-align: left;
+		width: 100em;
 	}
 
 	#admin {
 		text-align: center;
-		background-color:rgb(230, 230, 230);
+		background-color:rgb(255, 255, 255);
+		color:rgb(255, 255, 255)
 	}
 </style>

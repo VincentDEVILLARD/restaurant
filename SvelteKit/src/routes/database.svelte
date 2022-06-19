@@ -52,7 +52,7 @@
 				<li>{cand.weekend}</li>
 				<br>
 				<p>Motivation letter</p>
-				<li>{cand.motivation}</li>
+				<li>{cand.message}</li>
 				<br>
 				<hr>
 			{/each}
@@ -69,10 +69,9 @@
 				<p>Fetching data...</p>
 				{:then data}
 				{#each data as cand}
-					<h2>Reservation for{cand.date} at {cand.time}</h2>
-					<p>Number of guests</p>
-					<li>{cand.number}</li>
-					<li>{cand.message}</li>
+					<h2>Reservation for {cand.date} at {cand.time}</h2>
+					<p>Number of guests : {cand.number}</p>
+					<p>{cand.message}</p>
 					<hr>
 				{/each}
 				{:catch error}
