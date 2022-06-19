@@ -10,15 +10,33 @@
 </main>
 
 <footer>      
-		<div class="nav">
-		  <a class="nav-link" href="PAS DE LIEN ENCORE">À propos</a>
-		  <a class="nav-link" href="PAS DE LIEN ENCORE">Livraisons</a>
-		  <a class="nav-link" href="PAS DE LIEN ENCORE">RGPD</a>
-		  <a class="nav-link" href="PAS DE LIEN ENCORE">Contact</a>
+	<div class="row">
+		<div class="column" id="left">
+			<p>Contact Us</p>
 		</div>
+		<div class="column" id="right">
+			<p>RGPD</p>
+		</div>
+	  </div> 
 </footer>
 
 <style>
+
+	#left > p {
+		justify-content:left
+	}
+
+	.column {
+		float: left;
+		width: 50%;
+	}
+
+	.row:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
 	main {
 		flex: 1;
 		display: flex;

@@ -32,6 +32,8 @@
 		"@fontsource/fira-mono": "^4.5.0",
 		"@supabase/supabase-js": "^1.35.3",
 		"cookie": "^0.4.1",
+		"deepai": "^1.0.21",
+		"require": "^0.4.9",
 		"svelte-forms-lib": "^2.0.1",
 		"yup": "^0.32.11"
 	}

@@ -72,6 +72,12 @@
 		</ParallaxLayer>
 
 		<ParallaxLayer rate={0} offset={0}>	
+			<div class="titre">
+				<p class=ti>
+					Our History and Values
+				</p>
+			</div> 
+
 			<div class="description1">
 				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vulputate gravida lobortis. Ut sapien lacus, vestibulum quis lacinia ut, imperdiet ac est. Sed ex elit, lobortis nec nunc eget, fermentum interdum lacus. Donec faucibus volutpat quam, ornare elementum dui imperdiet sit amet. Mauris sed convallis magna. Vestibulum ut elit id ex suscipit auctor et vel neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam posuere volutpat lectus, id tincidunt tellus facilisis non. Sed risus nibh, imperdiet ut mi sit amet, dignissim tristique dolor. Aenean sodales ante nec odio ullamcorper, fringilla semper nunc commodo.
 
@@ -94,15 +100,26 @@
 </div>
 
 <style>
+	.titre {
+		position: absolute;
+		top: 7%;
+		background-color: rgba(0, 0, 0, 0.661);
+		color: white;
+		padding-left: 20px;
+		padding-right: 20px;
+		font-size: xx-large;
+	}
+
 	.description1 {
 		position: absolute;
-		top: 20%;
+		top: 30%;
 		left: 5%;
 		right: 40%;
 		background-color: rgba(0, 0, 0, 0.661);
 		color: white;
 		padding-left: 20px;
 		padding-right: 20px;
+
 	}
 
 	.description2 {
@@ -131,6 +148,12 @@
 		color: white;
 		font-size: 2vmin;
 	}
+
+	p.ti {
+		color: white;
+		font-size: 5vh;
+	}
+
 
 	.bg {
 		object-fit: fill;

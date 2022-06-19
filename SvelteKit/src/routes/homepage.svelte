@@ -15,8 +15,8 @@
 </script>
 
 <svelte:head>
-	<title>Notre Restaurant</title>
-	<meta name="description" content="À propos de notre restaurant" />
+	<title>Refresh Brunch</title>
+	<meta name="description" content="Refresh Brunch - Homepage" />
 </svelte:head>
 
 <div class=Video>
@@ -24,8 +24,8 @@
 		<source src="/videohomepage.mp4" type="video/mp4">
 	</video>
 	<div class="caption">
-		<h3>Un super super nom de restaurant</h3>
-		<h4>Avec un sous titre pour expliquer en quelques mots ce qu'on sert dans le restaurant. Il peut s'étendre sur plusieurs lignes.</h4>
+		<h3>Refresh Brunch</h3>
+		<h4>Fresh & French food. Cooked with love in Cergy. Brunch, Tapas and more...</h4>
 	</div>
 </div>
 
@@ -37,19 +37,18 @@
 			 
 			  <div class="slideshow">
 				<div class="box">
-				  <!-- svelte-ignore a11y-missing-attribute -->
-				  <img src="/img/kousbi1.jpg">
-				  <span>La Salle</span>>
+				  <a href='./history'><img src="/img/kousbi1.jpg" alt=""></a>
+				  <span>The Restaurant</span>>
 				</div>
 				<div class="box">
 				  <!-- svelte-ignore a11y-missing-attribute -->
-				  <img src="/img/kousbi2.png">
-				  <span>L'Équipe</span>
+				  <a href='./ourTeam'><img src="/img/kousbi2.png" alt=""></a>
+				  <span>The Team</span>
 				</div>
 				<div class="box">
 				  <!-- svelte-ignore a11y-missing-attribute -->
-				  <img src="/img/kousbi3.png">
-				  <span>La Nourriture</span>
+				  <a href='./menu'><img src="/img/kousbi3.png" alt=""></a>
+				  <span>The Food</span>
 				</div>
 	
 			  </div>
@@ -81,6 +80,7 @@
 		text-align: left;
 		color: #ffffff;
 		padding: 10px;
+		top:5%
 	}
 
 	h3 {
@@ -96,4 +96,51 @@
 		font-family: 'Times New Roman', Times, serif;
 		text-shadow: 1px 1px black;
 	}
+
+
+.container {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto; 
+}
+
+
+.slideshow {
+    display: flex;
+    width: 100%;
+    padding: 4% 2%;
+    box-sizing: border-box;
+    height: 100vh;
+}
+  
+.box {
+    flex: 1;
+    overflow: hidden;
+    transition: .5s;
+    margin: 0 2%;
+    line-height: 0;
+}
+  
+.box > a > img {
+    width: 200%;
+    height: calc(100% - 10vh);
+    object-fit: cover; 
+    transition: .5s;
+}
+  
+.box > span {
+    font-size: 3.8vh;
+    display: block;
+    text-align: center;
+    height: 10vh;
+    line-height: 2.6;
+}
+  
+.box:hover { flex: 1 1 50%; }
+  .box:hover > a > img {
+    width: 100%;
+    height: 100%;
+}
 </style>

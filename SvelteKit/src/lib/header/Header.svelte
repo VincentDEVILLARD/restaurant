@@ -1,22 +1,19 @@
 <script>
 	import { page } from '$app/stores';
-	import logo from './svelte-logo.svg';
 </script>
 
 <header>
 	<div class="corner">
-		<a href="https://kit.svelte.dev">
-			<img src={logo} alt="SvelteKit" />
+		<a href="/homepage">
+			<img src="/img/LogoRB.png" alt="">
 		</a>
 	</div>
 
 	<nav>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" />
-		</svg>
+
 		<ul>
 			<li class:active={$page.url.pathname === '/homepage'}>
-				<a sveltekit:prefetch href="/homepage">Homepage</a>
+				<a sveltekit:prefetch href="/homepage">Home</a>
 			</li>
 			<li class:active={$page.url.pathname === '/history'}>
 				<a sveltekit:prefetch href="/history">About Us</a> 
@@ -27,26 +24,29 @@
 			<li class:active={$page.url.pathname === '/recruitments'}>
 				<a sveltekit:prefetch href="/recruitments">Recruitments</a>
 			</li>
-
+			<li class:active={$page.url.pathname === '/ourTeam'}>
+				<a sveltekit:prefetch href="/ourTeam">The Team</a>
+			</li>
+			<li class:active={$page.url.pathname === '/privatisation-reservation'}>
+				<a sveltekit:prefetch href="/privatisation-reservation">Book a Table</a>
+			</li>
 		</ul>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" />
-		</svg>
+
 	</nav>
 
-	<div class="corner">
-		<!-- TODO put something else here? github link? -->
-	</div>
 </header>
+
+
 
 <style>
 	header {
 		display: flex;
 		justify-content: space-between;
+		background-color: white;
 	}
 
 	.corner {
-		width: 3em;
+		width: 11em;
 		height: 3em;
 	}
 
@@ -54,30 +54,16 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		width: 100%;
-		height: 100%;
 	}
 
-	.corner img {
-		width: 2em;
-		height: 2em;
-		object-fit: contain;
+	img {
+		height: 50px;
 	}
 
 	nav {
 		display: flex;
-		justify-content: center;
-		--background: rgba(255, 255, 255, 0.7);
-	}
-
-	svg {
-		width: 2em;
-		height: 3em;
-		display: block;
-	}
-
-	path {
-		fill: var(--background);
+		justify-content: right;
+		--background: rgb(255, 255, 255);
 	}
 
 	ul {
@@ -107,7 +93,7 @@
 		top: 0;
 		left: calc(50% - var(--size));
 		border: var(--size) solid transparent;
-		border-top: var(--size) solid var(--accent-color);
+		border-top: var(--size) solid var(black);
 	}
 
 	nav a {
@@ -126,6 +112,5 @@
 
 	a:hover {
 		color: var(--accent-color);
-		opacity: 10%
 	}
 </style>
