@@ -31,7 +31,10 @@
     <div class="menu-category"><br/>
 			<a href="#brunch"><div class="colonne1"><h2>Brunch</h2><p>(10h-15h)</p></div></a>
 			<a href="#tapas"><div class="colonne2"><h2>Tapas</h2><p>(18h-00h)</p></div></a>
-			<a href="#drinks"><div class="colone3"><h2>Drinks</h2></div></a><br/><br/>
+			<a href="#drinks"><div class="colonne3"><h2>Drinks</h2></div></a>
+			<br>
+			<br>
+			<br>
         	<div class="hline"></div>
     </div>
 <div class="menu-list">
@@ -180,7 +183,7 @@
 <div>
     <p style="text-align: center;font-size: 1.2em;font-weight:bold;letter-spacing:0.5px;font-style: italic">Bon appétit!</p><br/>
 	<div class="center">
-		<button class="button" role="button" onclick="location.href='privatisation-reservation.svelte'">Book a table</button>
+		<a href="privatisation-reservation"><button class="button">Book a table</button></a>
 	</div>
 	<br/>
 </div>
@@ -324,7 +327,8 @@ a:hover {
     background-repeat: no-repeat;
     background-position-y: -80px;
     height:30px;
-    margin:5 20% 0;
+	margin-left: 20%;
+	margin-right: 20%;
     padding: 50px;
 }
 .tapaspic {
@@ -333,7 +337,8 @@ a:hover {
     background-repeat: no-repeat;
     background-position-y: -40px;
     height:30px;
-    margin:5 20% 0;
+	margin-left: 20%;
+	margin-right: 20%;
     padding: 50px;
 }
 .drinkspic {
@@ -342,7 +347,8 @@ a:hover {
     background-repeat: no-repeat;
     background-position-y: -70px;
     height:30px;
-    margin:5 20% 0;
+	margin-left: 20%;
+	margin-right: 20%;
     padding: 50px;
 }
 .center {
@@ -375,7 +381,7 @@ a:hover {
 }
 .button:hover {
   background-color: #ccc !important;
-  color:rgb(48, 41, 29!important; 
+  color:rgb(48, 41, 29) !important; 
 }
 
 </style>
