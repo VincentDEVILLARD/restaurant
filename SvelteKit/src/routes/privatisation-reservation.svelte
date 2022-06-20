@@ -16,8 +16,7 @@ import '../app.css';
     let apiResult = null;
 
     const { form, errors, handleChange, handleSubmit, isSubmitting, handleReset } = createForm({
-        initialValues: { name: "", email: "", message: "" },
-        validationSchema: validationSchema,
+        initialValues: { name: "", email: "", message: "" },        validationSchema: validationSchema,
         onSubmit: async values => {
 
             try {

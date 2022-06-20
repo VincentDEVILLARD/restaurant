@@ -29,10 +29,12 @@
                 </p>
                 <p class="hours brunch" style="text-align:center">Brunch<br>10:00-15:00</p>
                 <p class="hours tapas" style="text-align:center">Tapas<br>18:00-00:00</p>
+                <!-- svelte-ignore a11y-missing-attribute -->
                 <img class="monday tapas" src="https://cdn.icon-icons.com/icons2/317/PNG/512/sign-check-icon_34365.png" style="width:20px">
                 <img class="tuesday brunch" src="https://cdn.icon-icons.com/icons2/317/PNG/512/sign-check-icon_34365.png" style="width:20px">
                 <img class="tuesday tapas" src="https://cdn.icon-icons.com/icons2/317/PNG/512/sign-check-icon_34365.png" style="width:20px">
                 <img class="wednesday brunch" src="https://cdn.icon-icons.com/icons2/317/PNG/512/sign-check-icon_34365.png" style="width:20px">
+                <!-- svelte-ignore a11y-missing-attribute -->
                 <img class="wednesday tapas" src="https://cdn.icon-icons.com/icons2/317/PNG/512/sign-check-icon_34365.png" style="width:20px">
                 <img class="thursday brunch" src="https://cdn.icon-icons.com/icons2/317/PNG/512/sign-check-icon_34365.png" style="width:20px">
                 <img class="thursday tapas" src="https://cdn.icon-icons.com/icons2/317/PNG/512/sign-check-icon_34365.png" style="width:20px">
